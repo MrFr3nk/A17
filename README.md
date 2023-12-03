@@ -73,7 +73,7 @@
 
 ## Usage
 
-1. Once you have obtained the `creds.json`, upload it to the `A17-SESSION` folder in your project directory.
+1. You will get qr code when you run the above replit. After scanning qr code you will get `creds.json` file in your personal chat, upload it to the `A17-SESSION` folder in your project directory. And done! you can now deploy your bot from following methods :
 <h2 align="center"> ⚙️  Edit Config File  ⚙️ </h2>
 
 - Customize your configuration details in your repository, specifically in the [`config.js`](https://github.com/Kai0071/A17/blob/master/config.js) file.

@@ -6801,17 +6801,17 @@ _Click the button below to download_`
         A17.sendMessage(from, { react: { text: "✨", key: m.key } })
         const helpmenu = `Hemlo *${pushname}* Dear...!! ${nowtime} ,
   
-Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+Hello, I am "SubZero+Md" a WhatsApp bot created and recoded by Mr Frank to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support. \n You can contact my developer Mr Frank here wa.me/263719647303
 
 
   ⌯    *Time* : ${kaitime}
   ⌯    *Date* : ${kaidate}
 
 
-  〢━━━ 〄 Bot Info 〄 ━━━〢
+  〢━━━ 〄 Sub Zero Info 〄 ━━━〢
 
 
-  ⌯    *Bot usr name :* ${pushname} 
+  ⌯    *Bot username :* ${pushname} 
   ⌯    *My prefix is :*  ${prefix}
   ⌯    *Owner name :* ${global.OwnerName} 
   ⌯    *Bot runtime :* ${runtime(process.uptime())} 
@@ -6832,7 +6832,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}auto-recoding
 
 
-  〢━━━ ⌬ Owner Only ⌬ ━━━〢
+  〢━━━ ⌬ My Owner Only ⌬ ━━━〢
 
 
   ⌯     ${prefix}join
@@ -7102,7 +7102,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯       all NSFW commands.
   ⌯    
   ⌯   『  *${global.BotName}*  』
-  ⌯       Developed By: *Kai*
+  ⌯       Developed By: *Mr Frank*
   ⌯    
   ⌯   🍁 To use any of these
   ⌯       commands type.

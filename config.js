@@ -9,7 +9,7 @@ global.antitags = true;
 
 
 //auto functioner
-global.autoTyping = false;                //auto tying by default off.
+global.autoTyping = true;                //auto tying by default off.
 global.autoRecord = false;                //auto recording by default off.
 global.groupevent = false;                //This is the new variable for controlling group event handling.
 global.statusseen = true;                 //This is the new variable for controlling status seen.
@@ -28,8 +28,8 @@ global.OwnerName = "Mr Frank";
 global.BotName = "SubZero Al";
 global.packname = "SubZero Bot";                             //Do not change.
 global.author = "By: Mr Frank";                               //Do not change.
-global.BotSourceCode = "https://github.com/MrFr3nk/A17"; //Do not change.
-global.SupportGroupLink = "https://chat.whatsapp.com/GhRGdwfaMVDCoeAdzILfl";
+global.BotSourceCode = "https://github.com/MrFr3nk/Zim-Bot"; //Do not change.
+global.SupportGroupLink = "https://chat.whatsapp.com/LTE94vfm9sE7vCtrYqnCdh";
 
 
 //
@@ -41,7 +41,7 @@ global.openAiAPI = "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";
 
 
 //
-global.location = "Tata City, India";
+global.location = "Zimbabwe, Chitungwiza";
 global.reactmoji = "❤️";
 global.themeemoji = "💖";
 global.vidmenu = { url: 'https://media.tenor.com/Jdu0Ov8X2sIAAAAC/A17-Bot.mp4' };

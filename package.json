@@ -37,7 +37,7 @@
         "@hapi/boom": "^10.0.1",
         "@shineiichijo/mal-news-scraper": "^0.0.2",
         "@shineiichijo/marika": "^2.0.6",
-        "@whiskeysockets/baileys": "^6.4.1",
+        "@whiskeysockets/baileys": "^6.5.0",
         "anime-wallpaper": "^1.1.1",
         "awesome-phonenumber": "^2.70.0",
         "axios": "^0.24.0",

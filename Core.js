@@ -1124,6 +1124,26 @@ Typed *surrender* to surrender and admited defeat`
       }
 
 
+      case 'ls':
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "📂", key: m.key } });
+
+
+        const currentDir = process.cwd(); // Get the current working directory
+
+        try {
+          const files = fs.readdirSync(currentDir);
+          let folderName = `Files in ${currentDir}:\n\n`;
+          let fileList = files.join('\n'); // Join the file names with a newline
+          A17.sendMessage(from, { text: folderName + fileList }, m);
+        } catch (error) {
+          console.error(error);
+          A17.sendMessage(from, { text: 'Error reading directory contents.🫳🏻' }, m);
+        }
+        break;
+
+
       case 'autostatus':
       case 'auto-status':
       case 'statusevent':
@@ -1257,9 +1277,66 @@ Typed *surrender* to surrender and admited defeat`
         break;
 
 
+      //
+
+      case 'dice': case 'roll': {
+        A17.sendMessage(from, { react: { text: "🎲", key: m.key } })
+        const result = Math.floor(Math.random() * 6) + 1; // Generate a random number between 1 and 6
+
+        const diceMessage = `🎲 *Dice Roll Result:* ${result}`;
+
+        reply(diceMessage);
+      }
+        break;
+
+
+      case 'flipcoin': case 'coin': {
+        A17.sendMessage(from, { react: { text: "🪙", key: m.key } });
+        // Simulate flipping a coin (0 for heads, 1 for tails)
+        const result = Math.random() < 0.5 ? 'Heads' : 'Tails';
+
+        const flipCoinMessage = `🪙 *Coin Flip Result: ${result}*`;
+        reply(flipCoinMessage);
+      }
+        break;
+
+
+      case 'rps': {
+        const randomEmoji = manyemojis[Math.floor(Math.random() * manyemojis.length)];
+        A17.sendMessage(from, { react: { text: randomEmoji, key: m.key } });
+
+        // Check if the command includes a valid move (rock, paper, or scissors)
+        const validMoves = ['rock', 'paper', 'scissors'];
+        if (!args[0] || !validMoves.includes(args[0].toLowerCase())) {
+          return reply('Please provide a valid move: rock, paper, or scissors.');
+        }
+
+        // Generate a random move for the bot
+        const botMove = validMoves[Math.floor(Math.random() * validMoves.length)];
+
+        // Determine the winner
+        const userMove = args[0].toLowerCase();
+        let result;
+
+        if (userMove === botMove) {
+          result = 'It\'s a tie!';
+        } else if (
+          (userMove === 'rock' && botMove === 'scissors') ||
+          (userMove === 'paper' && botMove === 'rock') ||
+          (userMove === 'scissors' && botMove === 'paper')
+        ) {
+          result = `You win! 🥳 ${userMove} beats ${botMove}.`;
+        } else {
+          result = `You lose! 🫳🏻 ${botMove} beats ${userMove}.`;
+        }
+
+        // Send the result as a response
+        reply(`You chose ${userMove}.\nA17 chose ${botMove}.\n${result}`);
+      }
+        break;
+
 
       // economy ...
-
       case 'daily': case 'claim': case 'reward':
 
         {
@@ -1278,6 +1355,7 @@ Typed *surrender* to surrender and admited defeat`
           reply(`You claimed 💎${daily.amount} for daily`);
         }
         break;
+
 
       case 'wallet': case 'purse': {
 
@@ -1298,7 +1376,6 @@ Typed *surrender* to surrender and admited defeat`
         await reply(`👛 ${pushname}'s Purse:\n\n_💎${balance.wallet}_`);
 
       }
-
         break;
 
 
@@ -1479,11 +1556,11 @@ Typed *surrender* to surrender and admited defeat`
 
 
 
-      /* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ GAMBLE ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
+      //-------------------------------------------------------------------------------------------------------------------------------------//
 
 
 
-      //
+      //gamble
       case 'gamble': case 'lottery':
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
@@ -1675,7 +1752,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
 
-      /////////////////////////////////////////////////////////////////////////////////////////////////
+      //----------------------------------------------------------------------------------------------------------------------------------------//
 
 
 
@@ -2631,7 +2708,6 @@ Typed *surrender* to surrender and admited defeat`
         if (m.sender != '916297175943@s.whatsapp.net') { return; }
 
         if (isBanChat) return reply(mess.bangc);
-        if (m.isGroup) reply(mess.privateonly)
 
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
@@ -4077,8 +4153,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
 
-      //////////////////////////////////////////////////////////////////////////////////////////////
-      ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      //---------------------------------------------------------------------------------------------------------------------------------------//
 
 
 
@@ -4230,7 +4305,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
 
-       //--------------------------------------------------------------------------------------------------------------------//
+      //-------------------------------------------------------------------------------------------------------------------------------------//
 
 
 
@@ -4300,6 +4375,8 @@ Typed *surrender* to surrender and admited defeat`
       //   });
       // }
       // break;
+
+
       case 'gimage':
       case 'gig':
       case 'googleimage': {
@@ -4331,11 +4408,6 @@ Typed *surrender* to surrender and admited defeat`
         });
       }
         break;
-
-
-
-
-
 
 
       // case "gig":
@@ -4376,7 +4448,9 @@ Typed *surrender* to surrender and admited defeat`
 
 
 
-      //---------------------------------------- NASA  -----------------------------------------//
+      //-------------------------------------------------------------------------------------------------------------------------------------//
+
+
 
       case 'apod': {
         if (isBan) return reply(mess.banned);
@@ -4468,6 +4542,59 @@ Typed *surrender* to surrender and admited defeat`
         const result2 = `*Title :* ${res2[0].judul}\n*Wiki :* ${res2[0].wiki}`
         A17.sendMessage(from, { image: { url: res2[0].thumb }, caption: result2 })
         break;
+
+
+      case 'urban': {
+        A17.sendMessage(from, { react: { text: "📖", key: m.key } })
+        // Extract the word from the message
+        const word = text.trim();
+
+        if (!word) {
+          reply(`Please provide a word to look up on Urban Dictionary. Example: ${prefix}urban hello`);
+          return;
+        }
+
+        // Make a request to the Urban Dictionary API
+        const apiUrl = `https://api.urbandictionary.com/v0/define?term=${encodeURIComponent(word)}`;
+
+        try {
+          const response = await axios.get(apiUrl);
+
+          // Extract the first definition from the API response
+          const definition = response.data.list[0]?.definition;
+
+          if (definition) {
+            const urbanMessage = `📖 *Urban Dictionary Definition for "${word}":*\n\n${definition}`;
+            reply(urbanMessage);
+          } else {
+            reply(`No Urban Dictionary definition found for "${word}".`);
+          }
+        } catch (error) {
+          console.error('Error fetching Urban Dictionary definition:', error.message);
+          reply('An error occurred while fetching the Urban Dictionary definition. Please try again later.');
+        }
+      }
+        break;
+
+
+        case 'aju': case 'campus': case 'imgaju':
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        if (!m.isGroup) return reply(mess.grouponly);
+        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+
+        const aju = {
+          image: { url: 'https://campus-pictures.onrender.com/' },
+          caption: `${pushname} here you go...`,
+         
+        }
+
+        await A17.sendMessage(m.chat, aju, { quoted: m }).catch(err => {
+          return ('Error!')
+        })
+
+        break;
+
 
       case 'earthquake':
         if (isBan) return reply(mess.banned);
@@ -7193,9 +7320,16 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   } catch (err) {
     A17.sendMessage(`${ownertag}@s.whatsapp.net`, util.format(err), { quoted: m })
     console.log(err)
+    let e = String(err)
+    if (e.includes("not-authorized")) return
+    if (e.includes("already-exists")) return
+    if (e.includes("rate-overlimit")) return
+    if (e.includes("Connection Closed")) return
+    if (e.includes("Timed Out")) return
+    if (e.includes("Value not found")) return
+    if (e.includes("Socket connection timeout")) return
   }
 }
-
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
@@ -7204,4 +7338,3 @@ fs.watchFile(file, () => {
   delete require.cache[file]
   require(file)
 })
-

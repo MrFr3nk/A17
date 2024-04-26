@@ -1070,6 +1070,18 @@ You'll be a noticeable absence!
 
 startA17();
 
+process.on('uncaughtException', function (err) {
+let e = String(err)
+if (e.includes("Socket connection timeout")) return
+if (e.includes("not-authorized")) return
+if (e.includes("already-exists")) return
+if (e.includes("rate-overlimit")) return
+if (e.includes("Connection Closed")) return
+if (e.includes("Timed Out")) return
+if (e.includes("Value not found")) return
+console.log('Caught exception: ', err)
+})
+
 let file = require.resolve(__filename);
 fs.watchFile(file, () => {
   fs.unwatchFile(file);

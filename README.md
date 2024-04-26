@@ -98,15 +98,6 @@ global.BotName = "A17";
 </h2>
 <br>
 <br>
-<h2 align="center"> ✨  Deploy On Mogenius  ✨ </h2>
-
-<h2 align="center">
-  <a href="https://studio.mogenius.com/studio/cloud-space/cloud-space-overview">
-    <img title="A17 on Mogenius" src="https://img.shields.io/badge/DEPLOY MOGENIUS-h?color=blue&style=for-the-badge&logo=genius">
-  </a>
-</h2>
-<br>
-<br>
 <h2 align="center"> 🍃  Deploy On Railway  🍃 </h2>
 
 <h2 align="center">

@@ -1,42 +1,42 @@
-<h1 align="center"> ✧ A17 ✧ </h1>
+<h1 align="center"> ✧ SubZero Md✧ </h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Capriola&size=40&duration=4000&pause=450&color=F70069&background=FFFFAA00&center=true&random=false&width=600&height=100&lines=Welcome+to+A17+MD+!;Explore+the+world+of+features!" />
+  <img src="https://readme-typing-svg.demolab.com?font=Capriola&size=40&duration=4000&pause=450&color=F70069&background=FFFFAA00&center=true&random=false&width=600&height=100&lines=Welcome+to+SubZero+MD+!;Explore+the+world+of+features!" />
 </p>
 
 <p align="center">
-   <a href="https://github.com/Kai0071">
+   <a href="https://github.com/MrFr3nk">
     <img src="https://graph.org/file/14d7cc038fa3192a8fe43.jpg" width="249">
 </p>
 
-<h1 align="center"> A17 BoT (Beta)</h1>
+<h1 align="center"> SubZero BoT (Beta)</h1>
 
 <p align="center"> 
-  Hi there, I'm "A17," a versatile WhatsApp bot created and reprogrammed by Kai to perform a wide array of functions based on WhatsApp Multi-Device (MD) Support.
+  Hi there, I'm "Subzeeo," a versatile WhatsApp bot created and reprogrammed by Mr Frank to perform a wide array of functions based on WhatsApp Multi-Device (MD) Support.
 
 <p align="center"> 
-  <a href="https://github.com/Kai0071/A17/stargazers">
+  <a href="https://github.com/MrFr3nk/SubZero-Md-V2/stargazers">
     <img src="https://img.shields.io/github/stars/Kai0071/A17?style=social">
 </p>
   
 <p align="center">
-  <a href="https://github.com/Kai0071/A17/fork">
+  <a href="https://github.com/MrFr3nk/SubZero-Md-V2/fork">
     <img src="https://img.shields.io/github/forks/Kai0071/A17?label=Fork&style=social">
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kai0071/A17">
+  <a href="https://github.com/MrFr3nk/SubZero-Md-V2">
     <img src="https://api.visitorbadge.io/api/visitors?path=Kai0071%2FA17&label=Repo%20Visitors&labelColor=%23697689&countColor=%23ba68c8&style=plastic&labelStyle=upper">
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kai0071">
+  <a href="https://github.com/MrFr3nk">
     <img title="Maintain" src="https://img.shields.io/badge/Maintain-Yes-cyan.svg?style=for-the-badge&logo=xcode" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kai0071">
+  <a href="https://github.com/MrFr3nk">
     <img title="Next Update" src="https://img.shields.io/badge/Next%20Update-Undefined!-green.svg?style=for-the-badge&logo=xcode" />
   </a>
 </p>
@@ -52,7 +52,7 @@
 <h2 align="center"> 🔰 Tap Here To Fork 🔰 </h2>
 
 <h2 align="center">
-  <a href="https://github.com/Kai0071/A17/fork">
+  <a href="[https://github.com/Kai0071/A17/fork](https://github.com/MrFr3nk/SubZero-Md-V2/fork)">
     <img src="https://img.shields.io/badge/FORK A17 MD-h?color=white&style=for-the-badge&logo=stackshare" />
   </a>
 </h2>
@@ -76,15 +76,15 @@
 1. You will get qr code when you run the above replit. After scanning qr code you will get `creds.json` file in your personal chat, upload it to the `A17-SESSION` folder in your project directory. And done! you can now deploy your bot from following methods :
 <h2 align="center"> ⚙️  Edit Config File  ⚙️ </h2>
 
-- Customize your configuration details in your repository, specifically in the [`config.js`](https://github.com/Kai0071/A17/blob/master/config.js) file.
+- Customize your configuration details in your repository, specifically in the [`config.js`](https://github.com/MrFr3nk/SubZero-Md-V2/blob/master/config.js) file.
 
 ```js
 
-global.Owner = ["916297175943"];
-global.OwnerNumber = ["916297175943"];
-global.ownertag = ["916297175943"];
-global.OwnerName = "Kai";
-global.BotName = "A17";
+global.Owner = ["263719647303"];
+global.OwnerNumber = ["263719647303"];
+global.ownertag = ["263719647303"];
+global.OwnerName = "Mr Frank";
+global.BotName = "SubZero Md";
 
 ```
 <br>
@@ -93,7 +93,7 @@ global.BotName = "A17";
 
 <h2 align="center">
   <a href="https://github.com/codespaces/new">
-    <img title="A17 on GitHub Codespaces" src="https://img.shields.io/badge/DEPLOY CODESPACE-h?color=black&style=for-the-badge&logo=visualstudiocode" />
+    <img title="SubZeeo on GitHub Codespaces" src="https://img.shields.io/badge/DEPLOY CODESPACE-h?color=black&style=for-the-badge&logo=visualstudiocode" />
   </a>
 </h2>
 <br>
@@ -102,7 +102,7 @@ global.BotName = "A17";
 
 <h2 align="center">
   <a href="https://railway.app/new">
-    <img title="A17 on Railway" src="https://railway.app/button.svg" />
+    <img title="SubZero on Railway" src="https://railway.app/button.svg" />
   </a>
 </h2>
 <br>
@@ -110,8 +110,8 @@ global.BotName = "A17";
 <h2 align="center"> ❤  Deploy On Heroku  ❤ </h2>
 
 <p align="center">
-  <a href="https://heroku.com/deploy?template=https://github.com/Kai0071/A17">
-    <img title="A17 on Heroku" src="https://www.herokucdn.com/deploy/button.png" alt="Deploy on Heroku">
+  <a href="https://heroku.com/deploy?template=https://github.com/MrFr3nk/SubZero-Md-V2">
+    <img title="SubZero on Heroku" src="https://www.herokucdn.com/deploy/button.png" alt="Deploy on Heroku">
   </a>
 </p>
 <br>
@@ -163,7 +163,7 @@ pkg install wget
 pkg install imagemagick -y
 ```
 ```
-git clone https://github.com/Kai0071/A17
+git clone https://github.com/MrFr3nk/SubZero-Md-V2
 ```
 ```
 cd A17
@@ -190,10 +190,10 @@ npm i -g forever && forever index.js && forever save && forever logs
 - [Download Libwebp](https://developers.google.com/speed/webp/download)
 
 ```cmd
-> git clone https://github.com/Kai0071/A17.git
+> git clone https://github.com/MrFr3nk/SubZero-Md-V2.git
 ```
 ```
-> cd A17
+> cd SubZero-Md-V2
 ```
 ```
 > npm i
@@ -206,7 +206,7 @@ npm i -g forever && forever index.js && forever save && forever logs
 <h2 align="center"> ⚙️ If You Want Autoreply/Bot Chat ⚙️
 </h2>
 
-Comment out/delete /* , */ the code form your Core.js  in your own repo -- [`Core.js`](https://github.com/Kai0071/A17/blob/main/Core.js)
+Comment out/delete /* , */ the code form your Core.js  in your own repo -- [`Core.js`](https://github.com/MrFr3nk/SubZero-Md-V2/blob/main/Core.js)
 ```js  
    
    /*
